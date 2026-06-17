@@ -1,0 +1,193 @@
+---
+title: Intro to Lil Bitty Things
+sidebar:
+  order: 1
+---
+
+import { Image } from 'astro:assets';
+import rKey from '../lessons/images/lesson-1/r-key.jpg';
+import qKey from '../lessons/images/lesson-1/q-key.jpg';
+import eKey from '../lessons/images/lesson-1/e-key.jpg';
+import wasdKeys from '../lessons/images/lesson-1/wasd-keys.jpg';
+import arrowKeys from '../lessons/images/lesson-1/arrow-keys.jpg';
+import altKey from '../lessons/images/lesson-1/alt-key.jpg';
+import shiftKey from '../lessons/images/lesson-1/shift-key.jpg';
+import middleMouseIcon from '../lessons/images/lesson-1/middle-mouse-icon.png';
+import rightMouseIcon from '../lessons/images/lesson-1/right-mouse-icon_128.jpg';
+import leftMouseIcon from '../lessons/images/lesson-1/left-mouse-icon_128.jpg';
+import scrollWheelIcon from '../lessons/images/lesson-1/scroll-wheel-icon.jpg';
+import gridUpDownButtons from '../lessons/images/lesson-1/grid-up-down-buttons.png';
+import createBlockImage from '../lessons/images/lesson-1/LBT-create-block.gif';
+
+
+Let's start by learning how to move around.
+
+## Rotate Camera
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={middleMouseIcon} height="50" alt="logo" />
+  <span>
+    Use Use the Middle Mouse *or* ALT + Left Mouse button to rotate around the player
+</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={altKey} height="50" alt="logo" style="margin: 0;"/>
+  <span>+</span>
+  <Image src={leftMouseIcon} height="50" alt="logo" style="margin: 0;"/>
+  <span>
+   ALT + Left Mouse button to rotate around the player
+</span>
+</div>
+
+![Descriptive Alt Text](../lessons/images/lesson-1/LBT-orbit-mouse.gif)
+
+<br /> <br /> <br /> <br /> <br />
+
+## Move Camera
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={shiftKey} height="50" alt="logo" style="margin: 0;"/>
+  <span>+</span>
+  <Image src={middleMouseIcon} height="50" alt="logo" style="margin: 0;"/>
+  <span>
+   SHIFT + Middle Mouse
+</span>
+</div>
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={shiftKey} height="50" alt="logo" style="margin: 0;"/>
+  <span>+</span>
+  <Image src={altKey} height="50" alt="logo" style="margin: 0;"/>
+  <span>+</span>
+  <Image src={leftMouseIcon} height="50" alt="logo" style="margin: 0;"/>
+  <span>
+    ALT + SHIFT + Left Mouse
+</span>
+</div>
+
+
+![Descriptive Alt Text](../lessons/images/lesson-1/LBT-move-camera.gif)
+
+<br /> <br /> <br /> <br /> <br />
+
+## Zoom Camera In/Out
+
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={scrollWheelIcon} height="100" alt="logo" style="margin: 0;"/>
+  <span>
+    Mouse Wheel or Two-Finger Scroll
+</span>
+</div>
+
+![Descriptive Alt Text](../lessons/images/lesson-1/LBT-zoom-camera.gif)
+
+<br /> <br /> <br /> <br /> <br />
+
+## Block Editor
+
+Blocks are what make up the world of your game. To add a block, click "Add Blocks" button on the left toolbar.
+
+![Descriptive Alt Text](../lessons/images/lesson-1/1-add-blocks-mode.png)
+
+<br /> <br /><br /> <br />
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={leftMouseIcon} height="50" alt="logo" style="margin: 0;"/>
+  <span>
+    Hover mouse over where you want to place the block and left lick
+  </span>
+</div>
+
+![Descriptive Alt Text](../lessons/images/lesson-1/LBT-create-block.gif)
+
+<br /> <br /><br /> <br />
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={rightMouseIcon} height="50" alt="logo" style="margin: 0;"/>
+    <span>
+    To remove a block, hover over it and right click
+    </span>
+</div>
+
+![Descriptive Alt Text](../lessons/images/lesson-1/LBT-delete-block.gif)
+
+<br /> <br /> <br /> <br /> <br />
+
+### Create Slopes
+
+On the left tool bar, click on *Add Slopes*. You can add/remove slopes the exact same way as blocks
+
+![Descriptive Alt Text](../lessons/images/lesson-1/5-slope-mode.png)
+
+<br/> <br/>
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={rKey} height="50" alt="logo" style="margin: 0;"/>
+    <span>
+    Press R to rotate
+    </span>
+</div>
+
+![Descriptive Alt Text](../lessons/images/lesson-1/LBT-rotating-slope.gif)
+
+<br /> <br /> <br /> <br /> <br />
+
+### Enabling Grid Placement
+
+Right now in *Add Blocks* mode you can only add blocks that already in the game. In order to add block onto empty space, turn on grid mode.
+
+![Descriptive Alt Text](../lessons/images/lesson-1/2-turn-on-grid-mode.png)
+
+To change the height of the grid the up and down buttons.
+
+<div style="display: flex; justify-content: center;">
+  <Image src={gridUpDownButtons} alt="logo" />
+</div>
+
+<br /> <br /> <br /> <br /> <br />
+
+## Play Game
+
+Click play button
+
+![Descriptive Alt Text](../lessons/images/lesson-1/6-play-mode.png)
+
+<br /> <br /> <br />
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={wasdKeys} height="100" alt="logo" />
+  <span>
+    To move around use WASD
+  </span>
+
+</div>
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <Image src={arrowKeys} height="100" alt="logo" />
+  <span>
+    **or** arrow keys
+  </span>
+
+</div>
+![Descriptive Alt Text](../lessons/images/lesson-1/7-playing-game.png)
+
+
+<div style="display: flex; align-items: center; gap: 1rem;">
+  <span>
+    Rotate camera with Q 
+  </span>
+  <Image src={qKey} height="50" alt="logo" />
+  <span>
+    **or** E
+  </span>
+  <Image src={eKey} height="50" alt="logo" />
+  <span>
+    keys
+  </span>
+</div>
+
+Continue through dialogue press any key
+
+![Descriptive Alt Text](../lessons/images/lesson-1/skip-dialogue.jpg)
