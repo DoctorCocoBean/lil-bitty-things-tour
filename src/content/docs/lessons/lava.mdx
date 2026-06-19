@@ -1,0 +1,74 @@
+---
+title: Lava
+sidebar:
+  order: 8
+---
+
+We're going to practice using what we just learned to make lava that ends the game if the player touches it.
+
+![Descriptive Alt Text](../lessons/images/lesson-8/lava-final-demo.gif)
+
+### Create lava Sprite
+
+In the "Sprites" tab, create a new sprite and draw how you want the lava to look. I googled Minecraft textures and tried my best to mimic what I saw.
+
+![Descriptive Alt Text](../lessons/images/lesson-8/lava-sprite.jpg)
+
+### Create lava Thing
+
+Our object is going to need some interactivity so create a new Thing
+
+![Descriptive Alt Text](../lessons/images/lesson-8/new-thing.jpg)
+
+Swap sprite
+
+![Descriptive Alt Text](../lessons/images/lesson-8/swap-sprite-1.jpg)
+
+![Descriptive Alt Text](../lessons/images/lesson-8/swap-sprite-2.jpg)
+
+By default Things show up in the game as 2d images and not 3d blocks
+
+![Descriptive Alt Text](../lessons/images/lesson-8/thing-as-billboard.jpg)
+
+Click the "Looks Like a Block" toggle. In the editor, it will still look like an image, but in the game our lava will be a block. 
+
+**Toggle:** means to switch back and forth between two or more options or states using a single button, key, or command.
+
+![Descriptive Alt Text](../lessons/images/lesson-8/lava-as-block.jpg)
+
+Rename our Thing "lava".
+
+![Descriptive Alt Text](../lessons/images/lesson-8/rename-lava.jpg)
+
+### Create End The Game action sequence
+
+In the "Action Sequence" tab, create a new action sequence.
+
+![Descriptive Alt Text](../lessons/images/lesson-8/new-action.jpg)
+
+Add "End the Game" action
+
+![Descriptive Alt Text](../lessons/images/lesson-8/add-end-the-game-action.jpg)
+
+Add "Say Something" action
+
+![Descriptive Alt Text](../lessons/images/lesson-8/add-say-something-action.jpg)
+
+Click the up arrow on the "Say Something" action to change the order that the actions will be executed.
+Otherwise the game will end first and our text will never show.
+
+![Descriptive Alt Text](../lessons/images/lesson-8/change-action-order.jpg)
+
+Rename our action "End Game".
+
+![Descriptive Alt Text](../lessons/images/lesson-8/rename-action.jpg)
+
+Add our new "Lava" action sequence to our Lava Thing.
+
+![Descriptive Alt Text](../lessons/images/lesson-8/add-action-to-thing.jpg)
+
+### Final result
+
+Here's an example of the lava in my room.
+
+![Descriptive Alt Text](../lessons/images/lesson-8/lava-final-demo.gif)
