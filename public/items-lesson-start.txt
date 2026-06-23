@@ -1,0 +1,710 @@
+{
+ "metadata": {
+  "version": "0.26.96"
+ },
+ "game_title": "items_lesson",
+ "player": {
+  "starting_position": [
+   0,
+   1,
+   0
+  ],
+  "starting_room_id": 0,
+  "standing_sprites": [
+   4
+  ],
+  "walking_sprites": [
+   5,
+   6
+  ],
+  "standing_animation_speed": 1,
+  "walking_animation_speed": 2,
+  "sprite_flip": true
+ },
+ "sprites": [
+  {
+   "id": 0,
+   "name": "grass",
+   "data": "VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWVVVVVVVVVVVVVWVWVWVVVVVVVVVVVWVVVWVVVVVVVVVVVVVVVVVVVVVWVVVVVVVVVVVVVWVWVWVVVVVVVVVVVWVVVWVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWVVVVVVVVVVVVVWVWVWVVVVVVVVVVVWVVVWVVVVVVVVVVVVVVVVVVVVVWVVVVVVVVVVVVVWVWVWVVVVVVVVVVVWVVVWVVV"
+  },
+  {
+   "id": 1,
+   "name": "wall",
+   "data": "cccccccfcccccccfcccccccfcccccccfcccccccfcccccccfffffffffffffffffcccfcccccccfcccccccfcccccccfcccccccfcccccccfccccffffffffffffffffcccccccfcccccccfcccccccfcccccccfcccccccfcccccccfffffffffffffffffcccfcccccccfcccccccfcccccccfcccccccfcccccccfccccffffffffffffffff"
+  },
+  {
+   "id": 2,
+   "name": "crate",
+   "data": "EEEEEEEEEEEEEEEEEYYYYYYYYYYYYYYEEDDDDDDDDDDDDDDEEEEEEEEEEEEEEEEEEYYEYYEYYEYDEYYEEDDEDDEDEYDDEDDEEDDEDDEEYDDEEDDEEDDEDDEYDDEDEDDEEDDEDEYDDEDDEDDEEDDEEYDDEEDDEDDEEDDEYDDEDEDDEDDEEDDEDDEDDEDDEDDEEEEEEEEEEEEEEEEEEYYYYYYYYYYYYYYEEDDDDDDDDDDDDDDEEEEEEEEEEEEEEEEE"
+  },
+  {
+   "id": 3,
+   "name": "flowers",
+   "data": "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggdggggggggggggggdQdggdgggggggggggdggdQdggggggggggXgggdgggXgggXggXXgggXggXgggggXggXgXgXXgXgggggXggXgXgXggXggg"
+  },
+  {
+   "id": 4,
+   "name": "player",
+   "data": "gggAAAAAAAAAAgggggAAJIIIIIIIAAggggAJIIIIIIIIIAggggAJIIIAIIAIIAggggAJIIIAIIAIIAggggAJIIIAIIAIIAggggAJIIIIIIIIIAggggAAJIIIIIIIAAgggggAAAAAAAAAAggggggAUVVVVVVVAggggggAUVVVVVVVAggggggAUVVVVVVVAggggggAUVVVVVVVAggggggAUVAAAAUVAggggggAUVAggAUVAggggggAAAAggAAAAggg"
+  },
+  {
+   "id": 5,
+   "name": "player2",
+   "data": "gggAAAAAAAAAAgggggAAJIIIIIIIAAggggAJIIIIIIIIIAggggAJIIIAIIAIIAggggAJIIIAIIAIIAggggAJIIIAIIAIIAggggAJIIIIIIIIIAggggAAJIIIIIIIAAgggggAAAAAAAAAAggggggAUVVVVVVVAggggggAUVVVVVVVAggggggAUVVVVVVVAggggggAUVVVVVVVAggggggAUVAAAAUVAggggggAUVAggAAAAggggggAAAAggggggggg"
+  },
+  {
+   "id": 6,
+   "name": "player3",
+   "data": "gggAAAAAAAAAAgggggAAJIIIIIIIAAggggAJIIIIIIIIIAggggAJIIIAIIAIIAggggAJIIIAIIAIIAggggAJIIIAIIAIIAggggAJIIIIIIIIIAggggAAJIIIIIIIAAgggggAAAAAAAAAAggggggAUVVVVVVVAggggggAUVVVVVVVAggggggAUVVVVVVVAggggggAUVVVVVVVAggggggAUVAAAAUVAggggggAAAAggAUVAggggggggggggAAAAggg"
+  },
+  {
+   "id": 7,
+   "name": "froggy",
+   "data": "gggUUUggggUUUgggggUBBBUggUBBBUgggUBBAABUUBAABBUggUBBAABWWBAABBUggUBBBBBWWBBBBBUgUWWBBBWWWWBBBWWUUWWWWWWWWWWWWWWUUWWWUWWWWWWUWWWUgUWWWVVVVVVWWWUggUVWWWWWWWWWWVUgggUVWWWWWWWWVUgggggUWWVVVVWWUggggUUWWWWWWWWWWUUgUWWVWWWWWWWWVWWUUVWWUVUVVUVUWWVUgUUUgUgUUgUgUUUg"
+  },
+  {
+   "id": 8,
+   "name": "coin",
+   "data": "gggggggggggggggggggggggggggggggggggggggggggggggggggggAAAAAAgggggggggARRRRRRAgggggggARRSSSSRRAggggggARQRRRRSRAggggggARQRQQRSRAggggggARQRSQRSRAggggggARQRRRRSRAggggggARRQQQQRRAgggggggARRRRRRAgggggggggAAAAAAggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+  },
+  {
+   "id": 9,
+   "name": "coin2",
+   "data": "gggggggggggggggggggggggggggggggggggggggggggggggggggggggAAgggggggggggggARRAggggggggggggASSAggggggggggggARRAggggggggggggAQQAggggggggggggAQQAggggggggggggARRAggggggggggggAQQAggggggggggggARRAgggggggggggggAAggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+  },
+  {
+   "id": 21,
+   "name": "creature",
+   "data": "ggggggggggggggggggggggAAAAggggggggggAAfffffAgggggggAffffffffAgggggAffffffffffAggggAffffffffffAggggAffABffABffAggggAffAAffAAffAggggAffAAffAAffAggggAffAAffAAffAggggAffffffffffAggggAffffffffffAggggAffffffffffAggggAffffffffffAgggggAffffffffAgggggggAAAAAAAAgggg"
+  }
+ ],
+ "blocks": [
+  {
+   "id": 0,
+   "name": "ground",
+   "sprites": [
+    0
+   ],
+   "animation_speed": 1,
+   "is_wall": true,
+   "action_sequence_id": -1
+  },
+  {
+   "id": 1,
+   "name": "wall",
+   "sprites": [
+    1
+   ],
+   "animation_speed": 1,
+   "is_wall": true,
+   "action_sequence_id": -1
+  },
+  {
+   "id": 2,
+   "name": "crate",
+   "sprites": [
+    2
+   ],
+   "animation_speed": 1,
+   "is_wall": true,
+   "action_sequence_id": -1
+  }
+ ],
+ "things": [
+  {
+   "id": 0,
+   "name": "froggy",
+   "sprites": [
+    7
+   ],
+   "animation_speed": 1,
+   "block_player": true,
+   "looks_like_block": false,
+   "action_sequence_id": 1
+  },
+  {
+   "id": 4,
+   "name": "flowers",
+   "sprites": [
+    3
+   ],
+   "animation_speed": 1,
+   "block_player": false,
+   "looks_like_block": false,
+   "action_sequence_id": -1
+  },
+  {
+   "id": 5,
+   "name": "creature",
+   "sprites": [
+    21
+   ],
+   "animation_speed": 1,
+   "block_player": false,
+   "looks_like_block": false,
+   "action_sequence_id": 9
+  }
+ ],
+ "items": [
+  {
+   "id": 0,
+   "name": "coin",
+   "sprites": [
+    8,
+    9
+   ],
+   "animation_speed": 2,
+   "starting_amount": 0,
+   "action_sequence_id": 2
+  }
+ ],
+ "rooms": [
+  {
+   "id": 0,
+   "name": "Start",
+   "background_color": "0095e9",
+   "color_shift_mode": 2,
+   "action_sequence_id": 0,
+   "player_start": [
+    0,
+    1,
+    0
+   ],
+   "room_blocks": [
+    {
+     "position": [
+      -1,
+      0,
+      -1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      0,
+      0,
+      -1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -1,
+      0,
+      -2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      0,
+      0,
+      -2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      0,
+      0,
+      0
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -1,
+      0,
+      0
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      1,
+      0,
+      0
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      1,
+      0,
+      -1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      1,
+      0,
+      -2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      1,
+      0,
+      1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      0,
+      0,
+      1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -2,
+      0,
+      1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -1,
+      0,
+      1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -2,
+      0,
+      0
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -2,
+      0,
+      -1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -2,
+      0,
+      -2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      2,
+      0,
+      0
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      2,
+      0,
+      -2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      2,
+      0,
+      -1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      2,
+      0,
+      1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      2,
+      0,
+      2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      1,
+      0,
+      2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      0,
+      0,
+      2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -1,
+      0,
+      2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -2,
+      0,
+      2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -3,
+      0,
+      1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -3,
+      0,
+      2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -2,
+      0,
+      3
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -3,
+      0,
+      3
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -4,
+      0,
+      1
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -4,
+      0,
+      2
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      -4,
+      0,
+      3
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      2,
+      0,
+      -3
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      1,
+      0,
+      -3
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      1,
+      0,
+      -4
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    },
+    {
+     "position": [
+      2,
+      0,
+      -4
+     ],
+     "room_block": {
+      "block_id": 0,
+      "is_slope": false,
+      "direction": 0
+     }
+    }
+   ],
+   "things": [
+    {
+     "position": [
+      -3,
+      1,
+      2
+     ],
+     "thing_id": 5
+    }
+   ],
+   "items": []
+  }
+ ],
+ "action_sequences": [
+  {
+   "id": 0,
+   "name": "Welcome Message",
+   "actions": [
+    {
+     "action_type": "list",
+     "actions": [
+      {
+       "action_type": "dialog",
+       "text": "Hello, friend! Let's go exploring..."
+      },
+      {
+       "action_type": "do_nothing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "name": "Froggy Always Wants Money",
+   "actions": [
+    {
+     "action_type": "decide",
+     "actions": [
+      {
+       "action_type": "if",
+       "conditional": {
+        "action_type": "conditional",
+        "left_term_type": 1,
+        "left_term_value": 0,
+        "operator": ">=",
+        "right_term_type": 0,
+        "right_term_value": 1
+       },
+       "actions": [
+        {
+         "action_type": "item_decrease",
+         "item_id": 0,
+         "amount": 1
+        },
+        {
+         "action_type": "dialog",
+         "text": "{froggy} Ooh! Thanks for the coin! Now you have [coin] coins."
+        }
+       ]
+      },
+      {
+       "action_type": "else",
+       "actions": [
+        {
+         "action_type": "dialog",
+         "text": "{froggy} Aww, no coins?"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "Coin Pickup",
+   "actions": [
+    {
+     "action_type": "dialog",
+     "text": "Shiny!"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "Hello World",
+   "actions": [
+    {
+     "action_type": "dialog",
+     "text": "Hello wonderful world!"
+    },
+    {
+     "action_type": "dialog",
+     "text": "Why did the strawberry cry?"
+    },
+    {
+     "action_type": "dialog",
+     "text": "Because he found himself in a jam. "
+    }
+   ]
+  }
+ ]
+}
